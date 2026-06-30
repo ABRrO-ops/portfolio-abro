@@ -8,7 +8,7 @@
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&family=Open+Sans:wght@300;400;700&family=Raleway:wght@700;800&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&family=Open+Sans:wght@300;400;700&family=Raleway:wght@700;800&family=Varela&display=swap" rel="stylesheet" />
 
   <!-- CSS -->
   <link rel="stylesheet" href="css/reset.css" />
@@ -19,7 +19,9 @@
 
   <!-- ======= NAVBAR ======= -->
   <nav class="navbar" id="navbar">
-    <div class="navbar__logo">AM.</div>
+    <div class="navbar__logo">
+        <img src="assets/images/mon-logo.png" alt="Logo Abdoul-Madjid BAWA" />
+    </div>
     <ul class="navbar__links">
       <li><a href="#about">About</a></li>
       <li><a href="#skills">Skills</a></li>
@@ -29,24 +31,51 @@
   </nav>
 
   <!-- ======= HERO ======= -->
-  <section class="hero" id="home">
-    <div class="hero__content">
-      <p class="hero__greeting">Hi, I am</p>
-      <h1 class="hero__name">Abdoul-Madjid<br/>BAWA</h1>
-      <p class="hero__title">Frontend Developer</p>
-      <p class="hero__desc">
-        Je transforme des idées en expériences web élégantes —<br/>
-        un composant propre à la fois.
+<!-- ======= HERO ======= -->
+<section class="hero" id="home">
+
+  <!-- Fonds -->
+  <div class="hero__left"></div>
+  <div class="hero__right"></div>
+
+  <!-- Contenu texte -->
+  <div class="hero__content">
+    <p class="hero__greeting">Hi, I am</p>
+    <h1 class="hero__name">Abdoul-Madjid<br/>BAWA</h1>
+    <p class="hero__title">Frontend Developer</p>
+    <div class="hero__socials">
+      <a href="mailto:abdoulmadjidbawa@gmail.com" class="hero__social-link" aria-label="Email">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+      </a>
+      <a href="https://github.com/ABRrO-ops" target="_blank" class="hero__social-link" aria-label="GitHub">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.477 2 2 6.477 2 12c0 4.418 2.865 8.166 6.839 9.489.5.092.682-.217.682-.482 0-.237-.009-.868-.013-1.703-2.782.604-3.369-1.342-3.369-1.342-.454-1.155-1.11-1.463-1.11-1.463-.908-.62.069-.608.069-.608 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.087 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.269 2.75 1.025A9.564 9.564 0 0112 6.844a9.59 9.59 0 012.504.337c1.909-1.294 2.747-1.025 2.747-1.025.546 1.377.202 2.394.1 2.647.64.699 1.028 1.592 1.028 2.683 0 3.842-2.339 4.687-4.566 4.935.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.743 0 .267.18.578.688.48C19.138 20.163 22 16.418 22 12c0-5.523-4.477-10-10-10z"/></svg>
+      </a>
+      <a href="https://www.linkedin.com/in/abdoul-madjid-bawa-33238a3a5/" target="_blank" class="hero__social-link" aria-label="LinkedIn">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M19 3H5a2 2 0 00-2 2v14a2 2 0 002 2h14a2 2 0 002-2V5a2 2 0 00-2-2zm-9 14H7v-7h3v7zm-1.5-8.268a1.732 1.732 0 110-3.464 1.732 1.732 0 010 3.464zM18 17h-3v-3.621C15 12.512 14.375 12 13.5 12c-.875 0-1.5.512-1.5 1.379V17h-3v-7h3v1.093C12.779 10.407 13.621 10 14.5 10c1.93 0 3.5 1.57 3.5 3.5V17z"/></svg>
+      </a>
+    </div>
+  </div>
+
+  <!-- Photo -->
+  <img src="assets/images/photo-profil.png" alt="Abdoul-Madjid BAWA" class="hero__photo" />
+
+  <!-- Bande sombre -->
+  <div class="hero__banner">
+    <div class="hero__banner-content">
+      <h2 class="hero__banner-title">Innovation fertile</h2>
+      <p class="hero__banner-text">
+        Étudiant passionné, je construis des interfaces web modernes et accessibles.
+        Chaque projet est une occasion d'apprendre, de créer et de livrer quelque chose
+        dont je suis fier — du code propre, du design qui respire.
       </p>
-      <div class="hero__actions">
-        <a href="#portfolio" class="btn btn--outline">Voir mes projets</a>
-        <a href="#contact" class="btn btn--fill">Me contacter</a>
+      <div class="hero__banner-btn">
+        <span>EN SAVOIR PLUS</span>
       </div>
     </div>
-    <div class="hero__image">
-      <img src="assets/images/profile.jpg" alt="Abdoul-Madjid BAWA" />
-    </div>
-  </section>
+    <div class="hero__banner-bg-icon">IT</div>
+  </div>
+
+</section>
 
   <!-- ======= ABOUT ======= -->
   <section class="about" id="about">
