@@ -4,78 +4,77 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Abdoul-Madjid BAWA — Portfolio</title>
-
-  <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&family=Open+Sans:wght@300;400;700&family=Raleway:wght@700;800&family=Varela&display=swap" rel="stylesheet" />
-
-  <!-- CSS -->
   <link rel="stylesheet" href="css/reset.css" />
   <link rel="stylesheet" href="css/variables.css" />
   <link rel="stylesheet" href="css/main.css" />
 </head>
 <body>
 
-  <!-- ======= NAVBAR ======= -->
+
   <nav class="navbar" id="navbar">
     <div class="navbar__logo">
-        <img src="assets/images/mon-logo.png" alt="Logo Abdoul-Madjid BAWA" />
+      <img src="assets/images/mon-logo.png" alt="Logo Abdoul-Madjid BAWA" class="navbar__logo-img">
     </div>
     <ul class="navbar__links">
       <li><a href="#about">About</a></li>
       <li><a href="#skills">Skills</a></li>
       <li><a href="#portfolio">Portfolio</a></li>
       <li><a href="#contact" class="navbar__cta">Contact</a></li>
+      <!-- Burger INSIDE la navbar, à droite -->
     </ul>
+     <button class="navbar__burger" id="burgerBtn" aria-label="Menu">
+        <span></span><span></span><span></span>
+     </button>
   </nav>
 
   <!-- ======= HERO ======= -->
-<!-- ======= HERO ======= -->
-<section class="hero" id="home">
+  <section class="hero" id="home">
+    <div class="hero__left"></div>
+    <div class="hero__right"></div>
 
-  <!-- Fonds -->
-  <div class="hero__left"></div>
-  <div class="hero__right"></div>
-
-  <!-- Contenu texte -->
-  <div class="hero__content">
-    <p class="hero__greeting">Hi, I am</p>
-    <h1 class="hero__name">Abdoul-Madjid<br/>BAWA</h1>
-    <p class="hero__title">Frontend Developer</p>
-    <div class="hero__socials">
-      <a href="mailto:abdoulmadjidbawa@gmail.com" class="hero__social-link" aria-label="Email">
-        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
-      </a>
-      <a href="https://github.com/ABRrO-ops" target="_blank" class="hero__social-link" aria-label="GitHub">
-        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.477 2 2 6.477 2 12c0 4.418 2.865 8.166 6.839 9.489.5.092.682-.217.682-.482 0-.237-.009-.868-.013-1.703-2.782.604-3.369-1.342-3.369-1.342-.454-1.155-1.11-1.463-1.11-1.463-.908-.62.069-.608.069-.608 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.087 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.269 2.75 1.025A9.564 9.564 0 0112 6.844a9.59 9.59 0 012.504.337c1.909-1.294 2.747-1.025 2.747-1.025.546 1.377.202 2.394.1 2.647.64.699 1.028 1.592 1.028 2.683 0 3.842-2.339 4.687-4.566 4.935.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.743 0 .267.18.578.688.48C19.138 20.163 22 16.418 22 12c0-5.523-4.477-10-10-10z"/></svg>
-      </a>
-      <a href="https://www.linkedin.com/in/abdoul-madjid-bawa-33238a3a5/" target="_blank" class="hero__social-link" aria-label="LinkedIn">
-        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M19 3H5a2 2 0 00-2 2v14a2 2 0 002 2h14a2 2 0 002-2V5a2 2 0 00-2-2zm-9 14H7v-7h3v7zm-1.5-8.268a1.732 1.732 0 110-3.464 1.732 1.732 0 010 3.464zM18 17h-3v-3.621C15 12.512 14.375 12 13.5 12c-.875 0-1.5.512-1.5 1.379V17h-3v-7h3v1.093C12.779 10.407 13.621 10 14.5 10c1.93 0 3.5 1.57 3.5 3.5V17z"/></svg>
-      </a>
-    </div>
-  </div>
-
-  <!-- Photo -->
-  <img src="assets/images/photo-profil.png" alt="Abdoul-Madjid BAWA" class="hero__photo" />
-
-  <!-- Bande sombre -->
-  <div class="hero__banner">
-    <div class="hero__banner-content">
-      <h2 class="hero__banner-title">Innovation fertile</h2>
-      <p class="hero__banner-text">
-        Étudiant passionné, je construis des interfaces web modernes et accessibles.
-        Chaque projet est une occasion d'apprendre, de créer et de livrer quelque chose
-        dont je suis fier — du code propre, du design qui respire.
-      </p>
-      <div class="hero__banner-btn">
-        <span>EN SAVOIR PLUS</span>
+    <div class="hero__content">
+      <p class="hero__greeting">Hi, I am</p>
+      <h1 class="hero__name">Abdoul-Madjid<br/>BAWA</h1>
+      <p class="hero__title">Frontend Developer</p>
+      <div class="hero__socials">
+        <a href="mailto:abdoulmadjidbawa@gmail.com" class="hero__social-link" aria-label="Email">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+        </a>
+        <a href="https://github.com/ABRrO-ops" target="_blank" class="hero__social-link" aria-label="GitHub">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.477 2 2 6.477 2 12c0 4.418 2.865 8.166 6.839 9.489.5.092.682-.217.682-.482 0-.237-.009-.868-.013-1.703-2.782.604-3.369-1.342-3.369-1.342-.454-1.155-1.11-1.463-1.11-1.463-.908-.62.069-.608.069-.608 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.087 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.269 2.75 1.025A9.564 9.564 0 0112 6.844a9.59 9.59 0 012.504.337c1.909-1.294 2.747-1.025 2.747-1.025.546 1.377.202 2.394.1 2.647.64.699 1.028 1.592 1.028 2.683 0 3.842-2.339 4.687-4.566 4.935.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.743 0 .267.18.578.688.48C19.138 20.163 22 16.418 22 12c0-5.523-4.477-10-10-10z"/></svg>
+        </a>
+        <a href="https://www.linkedin.com/in/abdoul-madjid-bawa-33238a3a5/" target="_blank" class="hero__social-link" aria-label="LinkedIn">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M19 3H5a2 2 0 00-2 2v14a2 2 0 002 2h14a2 2 0 002-2V5a2 2 0 00-2-2zm-9 14H7v-7h3v7zm-1.5-8.268a1.732 1.732 0 110-3.464 1.732 1.732 0 010 3.464zM18 17h-3v-3.621C15 12.512 14.375 12 13.5 12c-.875 0-1.5.512-1.5 1.379V17h-3v-7h3v1.093C12.779 10.407 13.621 10 14.5 10c1.93 0 3.5 1.57 3.5 3.5V17z"/></svg>
+        </a>
       </div>
     </div>
-    <div class="hero__banner-bg-icon">IT</div>
-  </div>
 
-</section>
+    <div class="hero__photo-circle">
+      <img src="assets/images/photo-profil.png" alt="Abdoul-Madjid BAWA" class="hero__photo" />
+    </div>
+
+    <div class="hero__banner">
+      <div class="hero__banner-content">
+        <h2 class="hero__banner-title">Innovation fertile</h2>
+        <p class="hero__banner-text">
+          Étudiant passionné, je construis des interfaces web modernes et accessibles.
+          Chaque projet est une occasion d'apprendre, de créer et de livrer quelque chose
+          dont je suis fier — du code propre, du design qui respire.
+        </p>
+        <div class="hero__banner-btn">
+          <span>EN SAVOIR PLUS</span>
+        </div>
+      </div>
+      <svg class="hero__banner-bg-icon" viewBox="0 0 588 683" xmlns="http://www.w3.org/2000/svg">
+        <rect x="60" y="100" width="420" height="420" rx="48" fill="none" stroke="#141414" stroke-width="22" transform="rotate(24 270 310)"/>
+        <text x="270" y="380" font-family="Varela, sans-serif" font-size="240" fill="#141414" font-weight="700" text-anchor="middle" transform="rotate(24 270 310)">IT</text>
+        <circle cx="560" cy="60" r="180" fill="#1a1a1a"/>
+      </svg>
+    </div>
+  </section>
 
   <!-- ======= ABOUT ======= -->
   <section class="about" id="about">
@@ -85,29 +84,51 @@
       </div>
       <p class="about__text">
         Passionné par le web et l'expérience utilisateur, je suis Abdoul-Madjid BAWA,
-        développeur Frontend basé en Afrique. Je conçois et développe des interfaces
+        développeur Frontend Junior basé en Afrique. Je conçois et développe des interfaces
         modernes, accessibles et performantes — avec un œil pour le détail et une
         vraie obsession pour le code propre.
       </p>
+
+      <div class="explore-btn">
+        <span class="explore-btn__text">EXPLORE</span>
+      </div>
+
+      <div class="zigzag-separator">
+        <img src="assets/icons/separateur.png" alt="" class="zigzag-separator__img" />
+      </div>
+
       <div class="services">
         <div class="service">
-          <div class="service__icon-wrap">✦</div>
-          <h3 class="service__title">DESIGN</h3>
+          <div class="service__header">
+            <img src="assets/icons/design.png" alt="Design" class="service__icon-wrap" />
+            <h3 class="service__title">DESIGN</h3>
+          </div>
           <p class="service__desc">Je conçois des interfaces modernes, intuitives et adaptées à vos besoins.</p>
         </div>
         <div class="service">
-          <div class="service__icon-wrap">⟨/⟩</div>
-          <h3 class="service__title">DEVELOPMENT</h3>
+          <div class="service__header">
+            <img src="assets/icons/development.png" alt="Development" class="service__icon-wrap" />
+            <h3 class="service__title">DEVELOPMENT</h3>
+          </div>
           <p class="service__desc">Je développe des sites propres, rapides et responsive.</p>
         </div>
-        <div class="service">
-          <div class="service__icon-wrap">↻</div>
-          <h3 class="service__title">MAINTENANCE</h3>
-          <p class="service__desc">J'assure le suivi et la mise à jour de vos projets web.</p>
+        <div class="service service--bottom">
+          <div class="service__content">
+            <div class="service__header">
+              <img src="assets/icons/maintenance.png" alt="Maintenance" class="service__icon-wrap" />
+              <h3 class="service__title">MAINTENANCE</h3>
+            </div>
+            <p class="service__desc">J'assure le suivi et la mise à jour de vos projets web.</p>
+          </div>
         </div>
+      </div>
+
+      <div class="zigzag-separator">
+        <img src="assets/icons/separateur.png" alt="" class="zigzag-separator__img" />
       </div>
     </div>
   </section>
+  <!-- ← about fermé proprement ici -->
 
   <!-- ======= SKILLS ======= -->
   <section class="skills" id="skills">
@@ -174,13 +195,14 @@
           <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python" />
           <span>PYTHON</span>
         </div>
-        <div class="skill-item no-icon">
-          <div class="skill-badge">🇬🇧</div>
-          <span>English for IT</span>
+        <div class="skill-item">
+          <img src="https://cdn.jsdelivr.net/gh/HatScripts/circle-flags/flags/gb.svg" alt="English" />
+          <span>ENGLISH FOR IT</span>
         </div>
       </div>
     </div>
   </section>
+  <!-- ← skills fermé proprement ici -->
 
   <!-- ======= PORTFOLIO ======= -->
   <section class="portfolio" id="portfolio">
@@ -195,51 +217,46 @@
         <button class="filter-btn" data-filter="designed">DESIGNED</button>
       </div>
 
-        <div class="portfolio__grid">
-
-            <div class="portfolio__item" data-category="coded" data-index="01" data-title="CivicAlert">
-                <img src="assets/images/civicalert.png" alt="CivicAlert" />
-                <div class="portfolio__overlay">
-                    <h3>CivicAlert</h3>
-                    <p class="portfolio__tag">Plateforme de signalement citoyen intelligent</p>
-                    <p class="portfolio__stack">School Project</p>
-                    <div class="portfolio__links">
-                        <span class="btn-small btn-small--disabled">DEMO bientôt</span>
-                    </div>
-                </div>
+      <div class="portfolio__grid">
+        <div class="portfolio__item" data-category="coded" data-index="01" data-title="CivicAlert">
+          <img src="assets/images/civicalert.png" alt="CivicAlert" />
+          <div class="portfolio__overlay">
+            <h3>CivicAlert</h3>
+            <p class="portfolio__tag">Plateforme de signalement citoyen intelligent</p>
+            <p class="portfolio__stack">School Project</p>
+            <div class="portfolio__links">
+              <span class="btn-small btn-small--disabled">DEMO bientôt</span>
             </div>
-
-            <div class="portfolio__item" data-category="coded" data-index="02" data-title="CotiPay">
-                <img src="assets/images/cotipay.png" alt="CotiPay" />
-                <div class="portfolio__overlay">
-                    <h3>CotiPay</h3>
-                    <p class="portfolio__tag">Tontines digitales pour microfinances</p>
-                    <p class="portfolio__stack">Hackathon TCCHackDefend 2026</p>
-                    <div class="portfolio__links">
-                        <a href="https://github.com/ABRrO-ops/TCCHackDefend2026_Commit-Pray" target="_blank" class="btn-small">CODE</a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="portfolio__item" data-category="coded" data-index="03" data-title="Bankvi">
-                <img src="assets/images/bankvi.png" alt="Bankvi" />
-                <div class="portfolio__overlay">
-                <h3>Bankvi</h3>
-                <p class="portfolio__tag">Gestion stocks, ventes & dettes</p>
-                <p class="portfolio__stack">Dashboard Commerçant interactif</p>
-                <div class="portfolio__links">
-                    <a href="https://github.com/abdoulmadjidbawa3-afk/bankvi2" target="_blank" class="btn-small">CODE</a>
-                </div>
-            </div>
+          </div>
         </div>
-
-    </div>
-
-        
+        <div class="portfolio__item" data-category="coded" data-index="02" data-title="CotiPay">
+          <img src="assets/images/cotipay.png" alt="CotiPay" />
+          <div class="portfolio__overlay">
+            <h3>CotiPay</h3>
+            <p class="portfolio__tag">Tontines digitales pour microfinances</p>
+            <p class="portfolio__stack">Hackathon TCCHackDefend 2026</p>
+            <div class="portfolio__links">
+              <a href="https://github.com/ABRrO-ops/TCCHackDefend2026_Commit-Pray" target="_blank" class="btn-small">CODE</a>
+            </div>
+          </div>
+        </div>
+        <div class="portfolio__item" data-category="coded" data-index="03" data-title="Bankvi">
+          <img src="assets/images/bankvi.png" alt="Bankvi" />
+          <div class="portfolio__overlay">
+            <h3>Bankvi</h3>
+            <p class="portfolio__tag">Gestion stocks, ventes & dettes</p>
+            <p class="portfolio__stack">Dashboard Commerçant interactif</p>
+            <div class="portfolio__links">
+              <a href="https://github.com/abdoulmadjidbawa3-afk/bankvi2" target="_blank" class="btn-small">CODE</a>
+            </div>
+          </div>
+        </div>
+      </div>
 
       <p class="portfolio__more">And many more to come!</p>
     </div>
   </section>
+  <!-- ← portfolio fermé proprement ici -->
 
   <!-- ======= CONTACT ======= -->
   <section class="contact" id="contact">
@@ -251,6 +268,11 @@
         Tu as un projet en tête ? Une idée à concrétiser ?
         Écris-moi, je serai ravi d'échanger avec toi.
       </p>
+
+      <div class="zigzag-separator">
+        <img src="assets/icons/separateur.png" alt="" class="zigzag-separator__img" />
+      </div>
+
       <form class="contact__form" id="contactForm">
         <div class="form__field">
           <input type="text" id="name" placeholder="ENTER YOUR NAME*" required />
@@ -268,6 +290,7 @@
       </form>
     </div>
   </section>
+  <!-- ← contact fermé proprement ici -->
 
   <!-- ======= FOOTER ======= -->
   <footer class="footer">
@@ -276,14 +299,22 @@
       <p>BACK TO TOP</p>
     </a>
     <div class="footer__socials">
-      <a href="https://github.com/ABRrO-ops" target="_blank" aria-label="GitHub">GitHub</a>
-      <a href="https://www.linkedin.com/in/abdoul-madjid-bawa-33238a3a5/" target="_blank" aria-label="LinkedIn">LinkedIn</a>
-      <a href="mailto:abdoulmadjidbawa@gmail.com" aria-label="Email">Email</a>
+      <a href="mailto:abdoulmadjidbawa@gmail.com" class="footer__social-link" aria-label="Email">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+      </a>
+      <a href="https://github.com/ABRrO-ops" target="_blank" class="footer__social-link" aria-label="GitHub">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.477 2 2 6.477 2 12c0 4.418 2.865 8.166 6.839 9.489.5.092.682-.217.682-.482 0-.237-.009-.868-.013-1.703-2.782.604-3.369-1.342-3.369-1.342-.454-1.155-1.11-1.463-1.11-1.463-.908-.62.069-.608.069-.608 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.087 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.269 2.75 1.025A9.564 9.564 0 0112 6.844a9.59 9.59 0 012.504.337c1.909-1.294 2.747-1.025 2.747-1.025.546 1.377.202 2.394.1 2.647.64.699 1.028 1.592 1.028 2.683 0 3.842-2.339 4.687-4.566 4.935.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.743 0 .267.18.578.688.48C19.138 20.163 22 16.418 22 12c0-5.523-4.477-10-10-10z"/></svg>
+      </a>
+      <a href="https://www.linkedin.com/in/abdoul-madjid-bawa-33238a3a5/" target="_blank" class="footer__social-link" aria-label="LinkedIn">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M19 3H5a2 2 0 00-2 2v14a2 2 0 002 2h14a2 2 0 002-2V5a2 2 0 00-2-2zm-9 14H7v-7h3v7zm-1.5-8.268a1.732 1.732 0 110-3.464 1.732 1.732 0 010 3.464zM18 17h-3v-3.621C15 12.512 14.375 12 13.5 12c-.875 0-1.5.512-1.5 1.379V17h-3v-7h3v1.093C12.779 10.407 13.621 10 14.5 10c1.93 0 3.5 1.57 3.5 3.5V17z"/></svg>
+      </a>
+      <a href="https://www.instagram.com/fan.tazio/" target="_blank" class="footer__social-link" aria-label="Instagram">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2c2.717 0 3.056.01 4.122.06 1.065.05 1.79.217 2.428.465.66.254 1.216.598 1.772 1.153.509.5.902 1.105 1.153 1.772.247.637.415 1.363.465 2.428.047 1.066.06 1.405.06 4.122s-.01 3.056-.06 4.122c-.05 1.065-.218 1.79-.465 2.428a4.883 4.883 0 01-1.153 1.772c-.5.508-1.105.902-1.772 1.153-.637.247-1.363.415-2.428.465-1.066.047-1.405.06-4.122.06s-3.056-.01-4.122-.06c-1.065-.05-1.79-.218-2.428-.465a4.89 4.89 0 01-1.772-1.153 4.904 4.904 0 01-1.153-1.772c-.248-.637-.415-1.363-.465-2.428C2.013 15.056 2 14.717 2 12s.01-3.056.06-4.122c.05-1.066.217-1.79.465-2.428a4.88 4.88 0 011.153-1.772A4.897 4.897 0 015.45 2.525c.638-.248 1.362-.415 2.428-.465C8.944 2.013 9.283 2 12 2zm0 1.802c-2.67 0-2.987.01-4.04.059-.976.045-1.505.207-1.858.344-.466.181-.8.398-1.15.748-.35.35-.566.683-.747 1.15-.137.353-.3.882-.344 1.857-.05 1.054-.06 1.37-.06 4.041 0 2.67.01 2.987.06 4.04.045.976.207 1.505.344 1.858.181.466.397.8.747 1.15.35.35.684.566 1.15.747.353.137.882.3 1.857.344 1.054.05 1.37.06 4.041.06 2.67 0 2.987-.01 4.04-.06.976-.045 1.505-.207 1.858-.344.466-.181.8-.398 1.15-.747.35-.35.566-.684.747-1.15.137-.353.3-.882.344-1.857.05-1.054.06-1.37.06-4.041 0-2.67-.01-2.987-.06-4.04-.045-.976-.207-1.505-.344-1.858a3.097 3.097 0 00-.747-1.15 3.098 3.098 0 00-1.15-.747c-.353-.137-.882-.3-1.857-.344-1.054-.05-1.37-.06-4.041-.06zm0 4.595a5.603 5.603 0 110 11.206 5.603 5.603 0 010-11.206zm0 9.241a3.638 3.638 0 100-7.276 3.638 3.638 0 000 7.276zm7.137-9.466a1.31 1.31 0 11-2.621 0 1.31 1.31 0 012.62 0z"/></svg>
+      </a>
     </div>
-    <p class="footer__copy">@2024 Abdoul-Madjid BAWA — All Rights Reserved.</p>
+    <p class="footer__copy">@2026 Abdoul-Madjid BAWA — All Rights Reserved.</p>
   </footer>
 
-  <!-- JS -->
   <script src="js/main.js"></script>
 </body>
 </html>
