@@ -334,7 +334,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: var(--space-sm) auto;
+  margin: 0;
   border-left: 4px solid var(--color-black);
   border-right: 4px solid var(--color-black);
   padding: 4px var(--space-sm);
@@ -353,7 +353,14 @@ body {
   letter-spacing: var(--ls-tight);
   color: var(--color-black);
 }
-
+.about__actions{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap:1.5rem;
+  flex-wrap: wrap;
+  margin-bottom: var(--space-xl);
+}
 /* ======= ZIGZAG SEPARATOR ======= */
 .zigzag-separator__img {
   height: 200px;
@@ -1097,7 +1104,16 @@ body {
   }
 
   .about__text p:last-child{
-    margin-bottom:0;
+    margin-bottom: 3rem;
+  }
+    .about__actions{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 1rem;
+      flex-direction: column;
+      gap: 1rem;
+
   }
   
 
