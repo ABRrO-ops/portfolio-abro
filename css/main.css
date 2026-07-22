@@ -1146,18 +1146,20 @@ body {
 
   }
    .resume-btn__icon{
-        display:inline-block;
-        font-size:18px;
-    }
+    display:inline-block;
+    font-size:18px;
+    margin-right:6px;
+  }
 
-    .resume-btn__text{
-        font-size:0;
-    }
+  .resume-btn__text{
+    font-size:0;
+  }
 
-    .resume-btn__text::after{
-        content:"RESUME";
-        font-size:12px;
-    }
+  .resume-btn__text::after{
+    content:"CV";
+    font-size:12px;
+    letter-spacing: var(--ls-normal);
+  }
 
   .services {
     flex-direction: column;
@@ -1259,7 +1261,9 @@ body {
     max-width: 100%;
     padding: 0 var(--space-md);
   }
-
+  .contact__text{
+    max-width: 320px;
+  }
   /* ======= FOOTER ======= */
   .footer {
     height: auto;
