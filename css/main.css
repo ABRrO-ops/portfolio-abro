@@ -360,11 +360,13 @@ body {
   letter-spacing: var(--ls-tight);
   color: var(--color-black);
 }
-
+.resume-btn__icon{
+    display:none;
+}
 /* ======= ZIGZAG SEPARATOR ======= */
 .zigzag-separator__img {
-  height: 200px;
-  width: auto;
+  width: 158px;
+  height: 17px;
   object-fit: contain;
   filter: grayscale(100%) contrast(0.6) brightness(1.4);
   mix-blend-mode: darken;
@@ -375,9 +377,9 @@ body {
   align-items: center;
   justify-content: center;
   width: 100%;
-  margin: var(--space-sm) auto;
+  margin-top: 85px;
+  margin-bottom: 108px;
 }
-
 
 /* ======= SERVICES ======= */
 .services {
@@ -388,6 +390,11 @@ body {
   margin: var(--space-sm) auto 0;
   flex-wrap: wrap;
   row-gap: var(--space-md);
+  margin-top : 12px
+}
+.services + .zigzag-separator{
+    margin-top:80px;
+    margin-bottom:40px;
 }
 
 .service {
@@ -438,7 +445,9 @@ body {
 
 /* ======= SKILLS ======= */
 .skills {
-  padding: var(--space-lg) 0 var(--space-lg) 0;
+  padding-top: 0 ;
+  padding-bottom: var(--space-lg);
+
   background: transparent;
 }
 
@@ -447,30 +456,36 @@ body {
   flex-direction: column;
   align-items: center;
 }
-.skills__category {
+.skills__category{
   font-family: var(--font-heading);
   font-weight: var(--fw-bold);
   font-size: var(--fs-lg);
   letter-spacing: var(--ls-normal);
-  margin-bottom: var(--space-md);
-  margin-top: var(--space-lg);
-  width: 100%;
-  text-align: left;
-  max-width: 600px;
+  margin-top:0;
+  margin-bottom:50px;
+  width:100%;
+  text-align:left;
+  max-width:750px;
+  
 }
 
 .skills .section-header {
-  margin-bottom: var(--space-md);
+  margin-bottom: 96px;
+  margin-top: 0 !important;
 }
 
-.skills__grid {
-  display: flex;
-  flex-wrap: wrap;
-  gap: var(--space-lg);
-  justify-content: center;
-  max-width: 600px;
+.skills__grid{
+  display:flex;
+  flex-wrap:wrap;
+  justify-content:center;
+  column-gap:95px;
+  row-gap:70px;
+  max-width:900px;
+  margin-bottom:102px;
 }
-
+.skills__grid:last-child{
+    margin-bottom:0;
+}
 .skill-item {
   display: flex;
   flex-direction: column;
@@ -491,8 +506,8 @@ body {
 .skill-item span {
   font-family: var(--font-heading);
   font-weight: var(--fw-regular);
-  font-size: var(--fs-xs);
-  letter-spacing: var(--ls-normal);
+  font-size: 0.75rem;
+  letter-spacing: 0.12rem;
   text-align: center;
 }
 
@@ -674,8 +689,13 @@ body {
   text-align: center;
   font-size: var(--fs-base);
   max-width: 700px;
-  margin: 0 auto var(--space-xl);
+  margin:0 auto 35px;
   line-height: 1.8;
+  margin-bottom:35px;
+}
+.contact .zigzag-separator{
+    margin-top:-20px;
+    
 }
 
 .contact__form {
@@ -916,6 +936,10 @@ body {
   padding: 0;
   flex-shrink: 0;
 }
+  .services + .zigzag-separator{
+      margin-top:61px;
+      margin-bottom:40px;
+  }
 
 .navbar__burger span {
   display: block !important;
@@ -1093,7 +1117,12 @@ body {
   .about__text{
       width: 280px;
       margin: 0 auto;
+       margin-bottom:30px;
   }
+  .about .section-header{
+      margin-bottom:38px;
+  }
+
 
   .about__text p{
       text-align: justify;
@@ -1113,9 +1142,22 @@ body {
       gap: 1rem;
       flex-direction: column;
       gap: 1rem;
+      margin-top: 0;
 
   }
-  
+   .resume-btn__icon{
+        display:inline-block;
+        font-size:18px;
+    }
+
+    .resume-btn__text{
+        font-size:0;
+    }
+
+    .resume-btn__text::after{
+        content:"RESUME";
+        font-size:12px;
+    }
 
   .services {
     flex-direction: column;
@@ -1151,11 +1193,18 @@ body {
 .skills__category {
   text-align: center;
   width: 100%;
+  margin-top:0;
+  margin-bottom:35px;
 }
-
+.skills .section-header{
+      margin-bottom:47px;
+  }
 
 .skills__grid {
   justify-content: center;
+  column-gap:45px;
+  row-gap:45px;
+  margin-bottom:70px;
 }
 
 /* Je garde seulement HTML CSS JS pour le mobil */
@@ -1222,5 +1271,14 @@ body {
   .section-title {
     font-size: var(--fs-lg);
     padding: var(--space-xs) var(--space-md);
+  }
+  .zigzag-separator{
+      margin-top:66px;
+      margin-bottom:61px;
+  }
+
+  .services + .zigzag-separator{
+      margin-top:61px;
+      margin-bottom:100px;
   }
 }
